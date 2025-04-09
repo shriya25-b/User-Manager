@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <title>Welcome to home page</title>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <style>
+        body {
+            background-color: #7fffd4; !important;
+        }
+
+        .manage{
+            margin-top: 80px;
+
+        }
+    </style>
 </head>
+
 <body>
 <div class="container-fluid text-center">
-<h1>Welcome to my application</h1>
-<a class="h2" th:href="@{/users}">Manage users</a>
+<h1> User Manager</h1>
+    <div class="manage">
+        <a class="btn btn-primary h2" th:href="@{/users}">Manage users</a>
+    </div>
 </div>
 </body>
 </html>
